@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:scaleType="fitCenter"
+        android:background="@drawable/backgroundstate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/play_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/playbutton"/>
+
+    <ImageButton
+
+        android:scaleType="fitCenter"
+        android:background="@drawable/backgroundstate"
+        android:src="@drawable/card1"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:id="@+id/card1"
+
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/play_button"
+        android:layout_toStartOf="@+id/play_button" />
+    <ImageButton
+        android:scaleType="fitCenter"
+        android:background="@drawable/backgroundstate"
+        android:src="@drawable/card2"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:id="@+id/card2"
+
+        android:layout_alignTop="@+id/card1"
+        android:layout_toRightOf="@+id/play_button"
+        android:layout_toEndOf="@+id/play_button" />
+
+    <ImageButton
+        android:scaleType="fitCenter"
+        android:background="@drawable/backgroundstate"
+        android:src="@drawable/card3"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:id="@+id/card3"
+        android:layout_below="@+id/card1"
+        android:layout_alignLeft="@+id/card1"
+        android:layout_alignStart="@+id/card1" />
+
+    <ImageButton
+        android:scaleType="fitCenter"
+        android:background="@drawable/backgroundstate"
+        android:src="@drawable/card4"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:id="@+id/card4"
+        android:layout_below="@+id/card2"
+        android:layout_alignLeft="@+id/card2"
+        android:layout_alignStart="@+id/card2" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
